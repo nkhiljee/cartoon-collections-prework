@@ -18,8 +18,8 @@ end
 
 def find_the_cheese(array)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  array.find do |cheese|
-    if cheese == cheese_types
+  array.find_with_index do |cheese, index|
+    if cheese == cheese_types[index]
     else
       nil 
     end
